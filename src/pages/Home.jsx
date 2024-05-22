@@ -17,7 +17,7 @@ export default function Home() {
       <p></p>
       <Link to={'/use-reducer'}>Use Reducer</Link>
       <p></p>
-      <Link to={'/redux'}>Redux</Link>
+      <Link to={'/redux-toolkit'}>Redux Toolkit</Link>
     </div>
   )
 }

@@ -1,15 +1,12 @@
 /*
-- Reducer  (...action)
-- 
+- Reducer ()
 */
 
-import { combineReducers, createStore } from "redux";
-import { userReducer } from "./reducers/user.reducer";
-import { countReducer } from "./reducers/cont.reducer";
+import { configureStore } from "@reduxjs/toolkit";
+import { userReducer } from "./slices/user.slice";
 
-const RooteReducer = combineReducers({
-    userStore: userReducer,
-    countStore: countReducer
+export const store = configureStore({
+    reducer: {
+       userStore: userReducer
+    }
 })
-
-export const store = createStore(RooteReducer)
