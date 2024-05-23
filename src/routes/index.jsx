@@ -9,6 +9,9 @@ import UseMemo from '../pages/memo/UseMemo'
 import UseCallback from '../pages/memo/UseCallback'
 import UseReducer from '../pages/UseReducer'
 import ReduxToolkit from '../pages/ReduxToolkit'
+import Promise from '../pages/Promise'
+import Api from '../pages/Api'
+import Test from '../pages/Test'
 export default function index() {
     return (
         <BrowserRouter>
@@ -22,6 +25,12 @@ export default function index() {
                 <Route path='/use-callback' element={<UseCallback/>}></Route>
                 <Route path='/use-reducer' element={<UseReducer/>}></Route>
                 <Route path='/redux-toolkit' element={<ReduxToolkit/>}></Route>
+                <Route path='/promise' element={<Promise/>}></Route>
+                <Route path='/api' element={<Api/>}>
+                    
+
+                </Route>
+                <Route path='/test' element={<Test/>}></Route>
             </Routes>
         </BrowserRouter>
     )
